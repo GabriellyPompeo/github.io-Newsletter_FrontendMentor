@@ -15,6 +15,37 @@ The designs were created to the following widths:
 
 - Tomato: hsl(4, 100%, 67%)
 
+
+
+
+
+    background-color: hsl(234, 29%, 20%);
+    background-color: hsl(235, 18%, 26%);
+    background-color: hsl(231, 7%, 60%);
+    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(4, 100%, 67%);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Neutral
 
 - Dark Slate Grey: hsl(234, 29%, 20%)
