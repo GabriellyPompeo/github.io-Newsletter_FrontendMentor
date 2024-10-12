@@ -9,7 +9,6 @@ body {
 
 .principalBox {
     background-color: hsl(0, 0%, 100%);
-    width: 90vw; /* taking up 90% of the screen's total width */
     max-width: 1000px;
     height: 80%;
     display: flex;
@@ -21,24 +20,22 @@ body {
 
 .leftColumn {
     width: 50%;
-    padding: 40px;
+    margin: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .rightColumn {
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(310, 12%, 29%);
 }
 
 .rightColumn img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0 10px 10px 0; /* Rounded corners */
+    width: 100%;
+    height: 110%;
+    border-radius: 10px 10px 10px 10px; /* Rounded corners */
 }
 
 .title {
@@ -55,7 +52,7 @@ body {
     font-weight: 700;
     font-size: 14px;
     color: hsl(234, 29%, 20%);
-    margin-top: 30px;  
+    margin-top: 40px;  
 }
 
 .subtitle {
@@ -63,7 +60,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: hsl(234, 29%, 40%);
-    margin-bottom: 20px;  /* margin for the top of the Email Address title for organization */
+    margin-bottom: 30px;
 }
 
 button {
@@ -86,8 +83,9 @@ button:hover {
 }
 
 .checkboxesDiv {
-    flex-direction: row;
-    background-color: hsl(0, 94%, 76%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .inputEmail {
@@ -102,13 +100,31 @@ button:hover {
 
 .customLabel {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
 .customLabelText {
     font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    color: hsl(234, 29%, 20%);
+    font-size: 16px;
+    color: hsl(234, 29%, 40%);
     font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.customLabelText input[type="checkbox"] {
+    display: none;
+}
+
+.customCheckbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 1px solid #FF6A3A;
+    border-radius: 10px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
 }
